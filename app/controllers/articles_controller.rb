@@ -25,7 +25,8 @@ class ArticlesController < ApplicationController
 
   def update
   @article = Article.find(params[:id])
-  @article.update(title: params[:title], description: params[:description])
+  @coupon.update = params[:article][:title]
+  @coupon.update = params[:article][:description]
   redirect_to article_path(@article)
   end
 
